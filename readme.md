@@ -122,36 +122,6 @@ The system comes pre-loaded with programming books:
 | 978-0201633610 | Design Patterns | Gang of Four | 3 copies |
 | 978-0134685991 | Effective Java | Joshua Bloch | 0 copies (Out of stock) |
 
-## Project Structure
-
-```
-library-soap-system/
-├── pom.xml                          # Parent POM
-├── README.md
-├── library-service/                 # SOAP Server
-│   ├── pom.xml
-│   └── src/main/
-│       ├── java/com/example/library/
-│       │   ├── LibraryServiceApplication.java
-│       │   ├── config/WebServiceConfig.java
-│       │   └── endpoint/
-│       │       ├── LibraryEndpoint.java
-│       │       └── LibraryService.java
-│       └── resources/
-│           └── xsd/library.xsd      # SOAP Contract
-└── patron-service/                  # SOAP Client
-    ├── pom.xml
-    └── src/main/
-        ├── java/com/example/patron/
-        │   ├── PatronServiceApplication.java
-        │   ├── config/ClientConfig.java
-        │   ├── client/LibraryClient.java
-        │   └── controller/PatronController.java
-        └── resources/
-            ├── application.properties
-            └── xsd/library.xsd      # Copy of SOAP Contract
-```
-
 ## Testing Scenarios
 
 ### Scenario 1: Successful Book Search
