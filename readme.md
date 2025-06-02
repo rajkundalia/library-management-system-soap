@@ -5,7 +5,7 @@ A complete multi-module Spring Boot project demonstrating SOAP web services arch
 ## Architecture Overview
 
 ```
-┌─────────────────┐    REST API    ┌─────────────────┐    SOAP Call    ┌─────────────────┐
+┌─────────────────┐    REST API   ┌─────────────────┐    SOAP Call    ┌─────────────────┐
 │   Web Client    │ ────────────► │ Patron Service  │ ──────────────► │ Library Service │
 │                 │               │ (SOAP Client)   │                 │ (SOAP Server)   │
 │                 │               │ Port: 8081      │                 │ Port: 8080      │
